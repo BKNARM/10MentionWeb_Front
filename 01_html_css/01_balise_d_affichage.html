@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ma seconde page en HTML">
+    
     <!-- cette balise meta avec la valeur déscription de l'attribut name fournit une courte description de la page. Cela peut être utilisé par les moteurs de recherche pour afficher un extrait de description sous le lien vers la page dans les résultats de recherche (le SERP)
      -->
-
+     
      <meta name="author" content="Semir Sarajlic">
      <!-- Cette balise meta avec la valeur author de l'attribut name spécifie l'auteur de la page.
         Elle peut être utilisée pour indiquer qui a créé le contenu de la page.
@@ -15,6 +16,43 @@
     -->
 
 
+
+    <style>
+
+        /* style dans l'en-tête */
+
+        body {
+
+            background-color: rgb(110, 100, 246);
+        }
+
+        h2 {
+            color: red;
+        }
+
+        h3 {
+
+            background-color: rgb(62, 67, 210);
+            color: greenyellow;
+            text-align: center;
+        }
+
+        p {
+            color: black;
+        }
+
+    </style>
+
+    <!-- 
+        <link> : C'est la balise utilisée pour lier des ressources externes à un document HTML.
+        Les attributs : 
+        1- rel="stylesheet" : spécifie la relation entre le document actuel et la ressource liée => indique que la ressource liée est une feuille de style utilisée pour la mise en forme de la page.
+        2- type="text/css : spécifie le type de média associé à la ressource liée. => indique que la ressource est une feuille de style en langage CSS (Cascading Style Sheets).
+        3- href="assets/css/00_structure_de_base.css : spécifie l'emplacement (chemin) de la ressource externe à lier
+    -->
+
+<link rel="stylesheet" type="text/css" href="./assets/css/01_balises_d_affichage.css">
+    
 
 
     <title>Balise de texte et CSS</title>
@@ -66,6 +104,52 @@
      <h6>Titre de niveau 6</h6>
 
     <hr><!-- hr horizontal ruler (régle horizontale = ligne horizontale), élément de type bloc -->
+
+
+    <!-- 
+        La balise <p> en HTML est utilisée pour définir un paragraphe de texte. Elle indique au navigateur web que le texte à l'intérieur de la balise doit être interprété comme un paragraphe distinct. 
+        Les paragraphes sont des éléments de type bloc
+        On ne doit pas mettre un paragraphe dans un paragraphe 
+    -->
+    <p>Ceci est un paragraphe, il n'y a pas une seul phrase...</p>
+    <p>Et là un second paragraphe.</p>
+    <p>
+        un paragraphe
+        sur
+        plusieurs
+        ligne dans le code
+    </p>
+
+
+    <hr>
+
+    <h2>Le CSS : Cascading style sheet</h2>
+
+    <p>Le CSS permet de faire du style sur nos pages HTML</p>
+    <!--3 façons pour déclarer le style:
+            - style en ligne (avec l'attribut style dans la balise ouvrante)
+            - style dans la balise <style> directement dans la partie head (l'en-tête)
+            - déclarer le style dans un fichier .css : feuille de style
+    -->
+
+    <h3>Le CSS dans la balise</h3>
+
+    <p>La première façon de faire du style dans un élément est de déclarer l'attribut style sur celui-là. Ce n'est pas la meilleure manière de le faire</p>
+
+    <p style="color: green; font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Je suis un paragraphe stileyyyyy!</p>
+
+
+
+    <h3>LE css dans l'en-tête</h3>
+    <p>Une seconde façon de faire du style sur notre page est de mettre la balise style dans la partie head. Cette méthode n'est toujours pas la plus conseillée mais elle permet plus de choses que la méthode balise en ligne, on peut désormais grâce a cette methode viser plusieurs éléments d'un coup. Exemple, on met du gris en fond sur corps de la page, les h2 en rouge et les h3 avec du fond rose</p>
+
+    <h3>Le CSS dans une feuille de style externe</h3>
+
+    <p>La dernière et meilleure façon pour faire du style sont la méthode suivante : on ouvre un dossier CSS avec un fichier style Css à l'intérieur il faudra alors lier nos deux fichiers grâce à la balise lien. On pourra alors faire du style sur les éléments qui se trouvent dans notre page. Exemple, on déclare que tous les paragraphes doivent être en bleu</p>
+
+
+   
+
 
 
     
