@@ -1,0 +1,67 @@
+<!--Ceci est un commentaire-->
+<!DOCTYPE html>
+    <!--
+        La balise DOCTYPE est la premiere balise obligatoire dans une page HTML, elle indique essentiellement à l'ordinateur qu'il s'agit d'un document HTML. C'est également une instruction pour le navigateur web concernant la version du langage de balisage utilisée pour la page.
+        Pour HTML4 : <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+    -->
+
+<html lang="fr">
+    <!--
+        La balise HTML désigne le ébut de la page -> balise obligatoire 
+        <html> c'est la balise racine du document HTML. Elle englobe tout le contenu de la page web
+        L'attribue "lang" dont la valeure est "fr" désigne la langue principale dans laquelle est  rédigé le contenu de la page : le français utilisé côté utilisateur.
+            -> IMPORTANT pour l'accessibilité -> il est recommandé d'inclure cette déclaration de laguage pour garantir une meilleure   accessibilité, compréhension et une intérprétation correct de la page par l'utilisateur et les systémes automatisés.
+        Lorsque l'on donne une valeure "zxx", on utilise cette abrévation essentiellement en LOREM IPSUM.
+    -->
+<head>
+    <!--
+        Element d'en-tête, la balise head regroupe toutes les méta-informations et contient les paramètres d'en-tête de la page HTML qui sont invisibles pour l'internaute.
+
+        Les méta sont les balises qui fournissent de méta-données au navigateur et moteur de recherche c'est a dire des informations au sujet de documents HTML en question. Il éxiste de très nombreuses analises meta et on va pouvoir ajouter différent attributs à l'élement qui vont nous servir à spécifier differents types de données.
+
+        Les attributs les plus courrants de l'élément meta vont être les attributes : charset, name et content
+            -> l'attribut charset qui sert à indiquer le jeu de caractères ou l'encodage des caractères de notre document y compris ceux de différentes langues (afficher les caractères spéciaux tels que less accents, les cédilles etc) 
+            -> l'attribut "name" vas nous permettre d'indiquer le type de meta-données que l'on shouaite passer
+            -> l'attribut content qui va nous permettre de passee une méta-donnée en soi. 
+    -->
+
+    <meta charset="utf-8"> <!--IL est recommandé de la placer au tout début de la balise head, surtout avant la balise titre, car cette dernière peut déjat concerné par l'encodage des caractères. Une seule valeur cependant devrait être utilisé aujourd'hui autant que possible : utf-8
+        NE JAMAIS METTRE ENDESSOUS DE LA LIGNE 14
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        Le viewport répresente la partie visible d'une page web par un utilisateur.
+        La taille de cette fenêtre va bien évidament varier en fonction de la taille de l'écran de l'utilisateur et de l'appareil utilisé.
+        "width=device-width, initial-scale=1.0" : contrôle la mise en page  et l'apparence initiale de la page sur les navigations mobile.
+            1 - "width=device-width" : ajuster la largeur de la page en fonction de la largeur de l'appareil.
+            2 - "initial-scale=1.0" : le niveau de zoom initial lorsque la page est chargée pour la première fois par le navigateur, signifie qu'il n'y a pas de zoom.
+    -->
+
+    <title> Ma première page HTML - structure de base de la page </title>
+    <!--
+        Le titre du document HTML, cette balise est obligatoire, le contenue de cet élément n'apparaît pas directement dans la page mais :
+        1- sur l'onglet : la barre de titre du navigateur web 
+        2- Comme titres de marques-pages (favoris)
+        3- par les moteurs de recherche comme titre de résultat de recherche
+    -->
+
+</head><!--Fin de la balise head-->
+
+<body><!--Le début de la partie visible dans le navigateur-->
+
+    Page test
+    <!-- Tout ce qui sera affiché sur la page s'écrit à l'interieur de la balise body, le corps du document -->
+
+
+    
+
+</body> <!--Fin de body : /!\ Attention ! je me mets jamais d'info sur le contenue de ma page en dehors de la balise fermante body !-->
+
+
+
+
+</html>
+
+
