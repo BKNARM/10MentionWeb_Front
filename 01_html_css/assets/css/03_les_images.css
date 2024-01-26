@@ -1,0 +1,73 @@
+
+
+
+
+body {
+    background-color: black; /*La couleur de fond du corps de la page*/
+    text-align: center;
+}
+
+h1 {
+    color: cadetblue; /*La couleur du texte des balises <h1> en cadetblue*/
+    text-transform: uppercase;/* transforme le text de baises en majuscules*/
+}
+
+h2 {
+    color: antiquewhite;
+    font-style: italic;/* donner un style italic au texte */
+
+}
+
+img {
+    width: 500px;/*La largeur des images à 500 pixels*/
+    height: 500px;/*La hauteur des images à 500 pixels*/
+    border-style: solid; /*Définit le style de la bordure comme étant solide*/
+    border-width: 5px;/*définie la largeure de la bordure à 5 pixels*/
+    border-color: azure;/*Définie la couleur de la bordure comme azure*/
+    /*Il existe une syntaxe alternative pour définir le style, ma largeure et la couleur de la bordure en une seule ligne*/
+    border: groove 10px azure;
+    border-radius: 5%;/*Arrondit les coins de l'image avec un rayon de 5%*/
+    margin-right: 50px;/*Ajoute une marge à droite de l'image et d'autres éléments voisins sur le côté droit*/
+    /* 
+        La propriété CSS margin est utilisée pour définir l'espace autour d'un élément. Elle contrôle l'espace entre les bords de l'élément et les éléments voisins. Elle peut prendre jusqu'à quatre valeurs  qui définissent l'espace autour de l'élément dans l'ordre suivant : haut, droite, bas, gauche.
+        La sytaxe est =>  margin: top right bottom left;
+
+        - margin: 10px;  marge de 10 pixels sur tous les côtés 
+        - margin: 10px 20px; marge de 10 pixels en haut/bas, 20 pixels à gauche/droite 
+        - margin: 10px 20px 30px; marge de 10 pixels en haut, 20 pixels à gauche/droite, 30 pixels en bas 
+        - margin: 10px 20px 30px 40px; marge de 10 pixels en haut, 20 pixels à droite, 30 pixels en bas, 40 pixels à gauche 
+
+
+    */
+    
+}
+
+figcaption, p {
+    color: aliceblue;
+}
+
+
+
+div {
+    height: 1000px;
+    background-image: url(../img/chien-Husky-assis-sur-herbe.jpg);/* définition de l'image de fond de la dive concerné*/
+    background-repeat: no-repeat;/*Empêche la répétition de l'image de fond*/
+    background-size: cover;/*ajuster la taille de l'image de fond pour couvrir l'ensemble de l'élément*/
+    /* background: url(../img/chien-Husky-assis-sur-herbe.jpg) no-repeat cover; */
+
+    padding: 50px;/*Ajouter une marge interne (éspace intérieur de 50px à l'élément*/
+    margin: 50px;/*Ajoute une marge externe (espace éxterieur de 50 px à l'élément*/
+
+}
+
+div p{
+    background-color: rgba(5, 19, 21, .6);
+    padding: 50px;
+    border-radius: 30px;
+}
+
+
+
+
+
+
