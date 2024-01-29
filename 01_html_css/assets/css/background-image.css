@@ -1,7 +1,7 @@
 
 /*Feuille de style pour la page : background-image*/
 body{
-    
+    background-color: brown;
 }
 
 div{
@@ -40,6 +40,31 @@ div{
             - avec un mot-clé prédéfini : top, right, bottom, left, center
 
     **************/
+
+    background-attachment: fixed;
+    /* overflow-y: auto; */
+
+    /*************
+        permet de définir la position initiale d'une image de fond à l'intérieur de la boîte d'un élément, elle spécifie les coordonnées où le coin supérieur gauche de l'image de fond doit être positionné par rapport à la boîte de l'élément parent.
+        Il existe deux façon pour définir la valeur de ba
+        ckground-position : 
+            - syntaxe : valeurX valeurY ( l'axe horizontal et l'axe vertical )
+            - avec un mot-clé prédéfini : top, right, bottom, left, center
+
+    **************/
+
+    /* background: center url(../img/10_mention_web_logo.jpg) no-repeat fixed; */
+    /*******************
+        La propriété  background est une propriété raccourcie qui permet de définir plusieurs propriétés liées à l'arrière-plan d'un élément en une seule déclaration, les propriétés : 
+            - background-color, background-image, background-repeat, background-attachment, background-position
+    
+    
+    
+    ********************/
+
+
+
+
     
 
 

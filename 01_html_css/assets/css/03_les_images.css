@@ -25,8 +25,8 @@ img {
     border-width: 5px;/*définie la largeure de la bordure à 5 pixels*/
     border-color: azure;/*Définie la couleur de la bordure comme azure*/
     /*Il existe une syntaxe alternative pour définir le style, ma largeure et la couleur de la bordure en une seule ligne*/
-    border: groove 10px azure;
-    border-radius: 5%;/*Arrondit les coins de l'image avec un rayon de 5%*/
+    border: solid 10px azure;
+    border-radius: 50%;/*Arrondit les coins de l'image avec un rayon de 5%*/
     margin-right: 50px;/*Ajoute une marge à droite de l'image et d'autres éléments voisins sur le côté droit*/
     /* 
         La propriété CSS margin est utilisée pour définir l'espace autour d'un élément. Elle contrôle l'espace entre les bords de l'élément et les éléments voisins. Elle peut prendre jusqu'à quatre valeurs  qui définissent l'espace autour de l'élément dans l'ordre suivant : haut, droite, bas, gauche.
@@ -43,6 +43,7 @@ img {
 }
 
 figcaption, p {
+
     color: aliceblue;
 }
 
@@ -61,10 +62,41 @@ div {
 }
 
 div p{
+    
     background-color: rgba(5, 19, 21, .6);
     padding: 50px;
     border-radius: 30px;
 }
+
+/* styles pour la classe nommée ImageCheval */
+
+.imageCheval{
+    /*La propriété transition permet de spécifier une transition animée entre les états d'un élément*/
+    transition: 1s;
+
+}
+
+.imageCheval:hover{
+    /* La propriété transform avec la fonction scale(), permet de modifier l'échélle d'un élément en modifiant sa taille. la fonction scale()
+     prend un argument, qui est le facteur d'échelle */
+    transform: scale(1.1);/*Agrandir l'élément à 110% de sa taille d'origine*/
+}
+
+/* style pour la classe nommée "imageDauphine */
+ .imageDauphin{
+    display: block;/*Définit l'affichage de l'élément en tant que block*/
+    margin: 30px auto;
+    transition: transform 1s ;
+    
+
+ }
+
+ .imageDauphin:hover{
+    transform: rotate(-10deg); /*Fait tourner l'image de -10deg lorsque'elle est survolé*/
+ }
+
+
+
 
 
 
