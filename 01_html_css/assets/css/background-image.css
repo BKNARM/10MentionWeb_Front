@@ -1,0 +1,48 @@
+
+/*Feuille de style pour la page : background-image*/
+body{
+    
+}
+
+div{
+    height: 900px;
+    width: 900px;
+    background-color: black;
+    /*Avec la propriété background-image, par default l'image se répète sur l'élément afin de le couvrir*/
+    background-image: url(../img/10_mention_web_logo.jpg);
+    background-repeat: no-repeat;
+    /**********************************
+        permet a spécifier si une image de fond doit etre répété dans dans les axes x,y etc
+
+        Les valeures de cette propriété:
+            -repeat : c'est la valeur par default
+            -repeat-x : l'image est uniquement répété sur l'axe x (horizontalement)
+            -repeat-y : -||- sur l'axe y (verticalement)
+            -no-repeat : l'image n'est pas répété
+    ***********************************/
+
+    background-size: contain;
+    /************
+        permet de définir la taille d'une image de fond par rapport à la boîte de l'élément pour contrôler la manière dont une image de fond est dimensionnée par rapport à celle-ci.
+        Il existe plusieurs façons de définir la valeur de background-size
+            - auto : valeurpar défaut, l'image de fond est affichée à sa taille d'origine.
+            - contain : L'image de fond est redimensionnée de manière à ce qu'elle tienne entièrement dans la boîte de l'élément sans déformer ses proportions.  Cela peut entraîner des espaces vides dans la boîte si l'image a un rapport d'aspect différent de celle de la boîte.
+            - cover : L'image de fond est redimensionnée de manière à ce qu'elle couvre entièrement la boîte de l'élément.Cela peut entraîner un recadrage de l'image si ses proportions diffèrent de celles de la boîte.
+            - Deux valeurs  : pour définir la largeur et la hauteur individuellement : largeur x hauteur.
+    
+    **************/
+    background-position: center;
+    /*************
+        permet de définir la position initiale d'une image de fond à l'intérieur de la boîte d'un élément, elle spécifie les coordonnées où le coin supérieur gauche de l'image de fond doit être positionné par rapport à la boîte de l'élément parent.
+        Il existe deux façon pour définir la valeur de ba
+        ckground-position : 
+            - syntaxe : valeurX valeurY ( l'axe horizontal et l'axe vertical )
+            - avec un mot-clé prédéfini : top, right, bottom, left, center
+
+    **************/
+    
+
+
+}
+
+
