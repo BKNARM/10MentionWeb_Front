@@ -12,7 +12,7 @@ body{
 div.navigation{
     /* background-color: red; */
     
-    width: 1900px;
+    width: 1888px;
     text-align: center;
     border: solid 2px #3C0753;
     padding: 20px;
@@ -49,14 +49,65 @@ div.main{
     
 
 }
-
-div.section1{
+/*la virgule (,) veut dire (et) dans CSS*/
+div.section1, div .section2{
     text-align: center;
 }
 
 div.section1 img{
     border-radius: 50px;
 }
+
+div.section2 {
+    background-image: url(../img/maik-jonietz-_yMciiStJyY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    padding: 100px;
+    color: white;
+    
+}
+
+div.section2 p{
+    display: inline-block;
+    border: solid 2px rgb(248, 243, 243);
+    width: 33%;
+    padding: 50px;
+    font-weight: bold;
+    background-color:black;
+
+    
+}
+
+div.piedDePage{
+    border: solid 2px rgb(248, 243, 243);
+    margin-top: 20px;
+    /* text-align: center; */
+
+}
+
+div.piedDePage ul{
+    display: inline-block;
+    width: 30%;
+    list-style: none;
+    
+
+}
+
+div.piedDePage ul li{
+    margin-bottom: 20px;
+}
+
+div.piedDePage ul li a{
+    color: rgb(32, 159, 202);
+    background-color: pink;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
 
 
 
