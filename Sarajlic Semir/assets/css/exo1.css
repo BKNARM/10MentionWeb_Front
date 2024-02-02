@@ -1,6 +1,6 @@
 
 
-/*  */
+
 *{
     box-sizing: border-box;
 }
@@ -72,7 +72,7 @@ h1{
 
 .section2{
    
-    background-image: url(../img/maik-jonietz-_yMciiStJyY-unsplash.jpg);
+    background-image: url(/assets/img/maik-jonietz-_yMciiStJyY-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed;
