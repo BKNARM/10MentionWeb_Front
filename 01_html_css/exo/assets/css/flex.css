@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #cbd285;
+    padding: 10px;
+}
+
+nav a{
+    color: black;
+    font-weight: bold;
+}
+
+/* body{
+    height: 500px;
+    width: 99%;
+    background-color: brown; 
+}
+
+.style{
+    text-align: center;
+    
+}
+
+.style a{
+    font-weight: lighter;
+    text-decoration: none;
+    
+}
+
+
+
+#exoFlex{
+    padding: 10px;
+    height: 35px;
+    background-color: #CBD285;
+    display: flex;
+    justify-content: space-around;
+    
+} */
+
