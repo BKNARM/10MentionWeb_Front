@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: px;
+}
+
+.bouttons{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;   
+}
+

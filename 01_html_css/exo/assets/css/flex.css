@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #cbd285;
+    padding: 10px;
+}
+
+nav a{
+    color: black;
+    font-weight: bold;
+}
+
+/* body{
+    height: 500px;
+    width: 99%;
+    background-color: brown; 
+}
+
+.style{
+    text-align: center;
+    
+}
+
+.style a{
+    font-weight: lighter;
+    text-decoration: none;
+    
+}
+
+
+
+#exoFlex{
+    padding: 10px;
+    height: 35px;
+    background-color: #CBD285;
+    display: flex;
+    justify-content: space-around;
+    
+} */
+
+
+/****************************Exercice 2******************************/
+/* body{
+    margin: 0 10% 0 10%;
+} */
+
+header{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.haut{
+    padding: 3px;
+    background-color: #FFD6D6;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+section{
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    
+}
+
+aside{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 15%;
+    background-color:#0F7D87;
+}
+
+h4{
+    font-weight: lighter;
+}
+
+.bas{
+    background-color: #F7F39A;
+    width: 100%;
+}
+
+div{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 85%;
+    background-color: #A0B08B;
+}
+
+
+/*******************************EXERCICE 2 BIS********************************/
+
+  
+  /* .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .zone {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gauche {
+    background-color: #f5f5f5;
+  }
+  
+  .droite {
+    background-color: #ddd;
+  }
+  
+  
+
+  
+/*******************************EXERCICE 2 BIS********************************/
+
+
+
+
+/*******************************EXERCICE 3********************************/
+/* main{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    flex-direction: column;
+} */
+
+#main section aside{
+    background-color: #FF6347;
+}
+
+#main section div{
+    background-color: #D8BFD8;
+}
+
+/* #main header :first-child{
+
+    background-color: #FFD6D6;
+} */
+
+#main header :nth-child(2){
+    background-color: #0F7D87;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
