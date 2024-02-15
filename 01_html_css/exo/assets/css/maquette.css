@@ -64,8 +64,12 @@ section{
 }
 
 .zone-deux  {
+    height: 400px;
     display: flex;
+    align-items: center;
 }
+
+
 
 aside{
     background-color: #CAA6A6;
