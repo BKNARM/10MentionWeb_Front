@@ -40,4 +40,22 @@ nav a{
 main {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap:wrap;
 }
+
+h1{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+
+aside{
+    width: 30%;
+}
+
+main > div{
+    /*selectionne l'enfant direct d'un élément celui qui est imbriqué directement après son élément référent*/ 
+    width: 70%;
+}
+
