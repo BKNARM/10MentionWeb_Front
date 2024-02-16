@@ -301,6 +301,22 @@ Dans le contexte flex on vas  avoir un axe principale (main axis), il est par d�
 }
 
 
+/****************order*************************/
+
+/* Par défaut, l'ordre d'apparition des flex-items correspond à l'ordre de leur apparition dans le code HTML, cet ordre peut être géré manuellement à l'aide de la propriété order. Dans ce cas, l'ordre d'apparition des flex-items devient l'ordre des entiers, sachant qu'un flex-item reçoit la valeur order:0 par défaut*/
+
+#conteneurOrder :first-child{
+    order: 3;
+}
+
+#conteneurOrder :nth-child(2){
+    order: 1;
+}
+
+
+
+
+
 
 
 

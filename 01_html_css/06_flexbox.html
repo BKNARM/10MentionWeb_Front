@@ -303,15 +303,15 @@
         </section>
 
         <section>
-            <h2>F - Répartir plusieurs lignes</h2>
-        <p>
-            Si vous avez plusieurs ligne dans votre flexbox,vous pouvez choisir comment celles-ci seront réparties avec <span>align-content</span>.
-            Cette propriété permet de gérer l'alignement des différents lignes (ou colonnes) les un par rapports au autres.
-            Cette propriété n'aura d'éffet que si le conteneur flexible posséde plusieurs lignes(si l'axe principale est
-            horizontal) ou plusieurs colonnes ( si l'axe principle est vertical) et que si le flex-wrap est présent.
-        </p>
+                <h2>F - Répartir plusieurs lignes</h2>
+            <p>
+                Si vous avez plusieurs ligne dans votre flexbox,vous pouvez choisir comment celles-ci seront réparties avec <span>align-content</span>.
+                Cette propriété permet de gérer l'alignement des différents lignes (ou colonnes) les un par rapports au autres.
+                Cette propriété n'aura d'éffet que si le conteneur flexible posséde plusieurs lignes(si l'axe principale est
+                horizontal) ou plusieurs colonnes ( si l'axe principle est vertical) et que si le flex-wrap est présent.
+            </p>
 
-        <p> Les valeurs de cette propriété :</p>
+            <p> Les valeurs de cette propriété :</p>
         <ul>
             <li>flex-start : les éléments sont placés au début</li>
             <li>flex-end : les élélements sont placés à la fin</li>
@@ -438,6 +438,25 @@
             <div>12</div>
         </div>
 
+        </section>
+        <section>
+            <h2>G - order</h2>
+            <p>sans changer le code HTML, nous pouvons modifier l'orde des éléments en CSS grâce à la propriété "order", indiquez simplement un nombre et les éléments seront triés du plus petit au plus grand</p>
+
+            <h3>Par défaut</h3>
+            <div class="style" id="conteneurG">
+                <div>Element 1</div>
+                <div>Element 2</div>
+                <div>Element 3</div>
+            </div>
+
+            <h3>Avec order</h3>
+            <div class="style" id="conteneurOrder">
+                <!-- Element 1 -> order 3 / Element 2 -> order1 / Element 3 -> order 2 -->
+                <div>Element 1</div>
+                <div>Element 2</div>
+                <div>Element 3</div>
+            </div>
         </section>
         
 

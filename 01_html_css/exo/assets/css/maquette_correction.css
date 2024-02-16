@@ -38,6 +38,8 @@ nav a{
 /* **************style pour main******************* */
 
 main {
+    width: 90%;
+    margin: 50px auto;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap:wrap;
@@ -50,12 +52,78 @@ h1{
     text-transform: uppercase;
 }
 
-aside{
-    width: 30%;
-}
+
 
 main > div{
     /*selectionne l'enfant direct d'un élément celui qui est imbriqué directement après son élément référent*/ 
     width: 70%;
+}
+
+main > div section:first-child{
+    background-color: #ffe7e7;
+    padding: 50px;
+}
+
+h2{
+    text-align: center;
+    padding: 40px 0;
+}
+
+main > div section:nth-child(2){
+    background-color:#944E63;
+    padding: 50px;
+}
+
+main > div section:nth-child(2) div{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+main article{
+    background-color: #b47b84;
+    color: #fff;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+
+h3{
+    color: #333;
+    margin-bottom: 15px;
+}
+
+aside{
+    width: 30%;;
+    background-color: #caa6a6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+aside a{
+    background-color: #fff;
+    border-radius: 20px;
+    color: #333;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+/*************************style footer*********************/
+
+
+footer{
+    border-top: 4mm ridge #ff3366;
+    text-align: center;
+}
+
+footer p{
+    padding: 30px;
 }
 
