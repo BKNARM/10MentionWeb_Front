@@ -262,11 +262,13 @@ Dans le contexte flex on vas  avoir un axe principale (main axis), il est par d�
 
 #conteneurWrap-reverse{
     flex-wrap: wrap-reverse; /* les éléments flexibles vont passer à la ligne de manière inverse par rapport à leur ordre d'origine*/
+    
 }
 
 /**********************************F - REPARTIR PLUSIEURS LIGNES*************************************************/
 .wrap{
     flex-wrap: wrap;
+    
 }
 
 #stretch div{
