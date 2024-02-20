@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #FFE7E7
+}
+
+caption{
+    color: #802C43;
+}
+
+table{
+    background-color: #FFF6E9;
+    width: 90% ;
+    height: 120px;
+    border-collapse: collapse;
+    border: 2px solid
+     
+    
+}
+
+thead{
+    width: 90%;
+    background-color: #BE7575;
+}
+
+th, td{
+    border: solid #802C43;
+    
+}
+
