@@ -8,99 +8,87 @@ body{
     border: solid black 2px;
 }
 
-header{
+.containerHead{
     /* display: flex;
     flex-direction: column; */
-    /* background-color:blueviolet ; */
-    width: 100%;
-    height: 50px;
-}
-
-header div{
-    width: 100% ;
-    display: flex;
-}
-
-.containerHead div div{
-    display: flex;
     background-color: blue;
+    height: 180px;
     width: 100%;
-    justify-content: center;
-}
-
-.containerHead div:first-child{
-    background-color:#5F9EA0 ;
-}
-
-.containerHead div:nth-child(2){
-    background-color:#008B8B;
-}
-
-.containerHead div:last-child{
-    background-color:#00CED1;
-}
-
-
-
-/* ************************fin header************************************** */
-
-
-/* *****************Nav***************************************************** */
-
-
-.containerHead nav{
-    display: flex;
-    width: 100%;
-    height: 60px;
-    background-color:#FFEBCD;
-    justify-content: center;
-    align-items: center;
     
 
 }
 
-.containerHead nav a{
-    margin: 0 50px;
-}
 
-/* ********************fin nav******************************************** */
 
-/* ***********************début section article 1 et 2*********************************** */
-main{
-    padding: 5px;
-    margin-top: 70px;
-    height: 300px;
-    background-color: white;
-}
-main section{
-    width: 100%;
+.containerHead div{
+    margin: 0;
     display: flex;
+    width: 100%;
+    height: 65%;
 }
 
-main section article{
+.containerHead div div:first-child{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
-    width: 100%;
-    height: 200px;
+    width: 33%;
+    height: 100%;
+    background-color:#5F9EA0;
+}
+
+.containerHead div:nth-child(2){
+    justify-content: center;
+    align-items: center;
+    width: 34%;
+    height: 100%;
+    background-color: #008B8B;
+}
+
+.containerHead div:last-child{
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    background-color: #00CED1;
+}
+
+.containerHead nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50%;
+    height: 35%;
+    background-color: #FFEBCD;
+}
+
+.containerHead nav a{
+    padding:0 50px;  
+}
+
+/* ****************section article 1 article 2********************************** */
+
+main section:first-child{
+    margin: 8px;
+    display: flex;
+    height: 150px;
+    
 }
 
 main section article:first-child{
     background-color:#A9A9A9 ;
-    
 }
 
-main section article:last-child{
-    background-color: #708090;
-}
-/* ******************Fin section article 1 et 2***************************** */
-/* *********************Section 2******************************************* */
-main section:last-child{
-    width: 100%;
-    background-color:#B0E0E6 ;
+main section:nth-child(2){
+    text-align: center;
+    background-color: #B0E0E6;
+    padding: 5px;
 }
 
+main section article :nth-child(2){
+    text-align: center;
+    background-color: #B0E0E6;
+    padding: 5px;
 
+}
 
 
