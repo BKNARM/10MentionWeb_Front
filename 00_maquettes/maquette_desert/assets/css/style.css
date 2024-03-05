@@ -55,6 +55,8 @@ nav{
 	font-weight: bolder;
 	
 
+	
+
 }
 
 nav a{
@@ -98,6 +100,7 @@ section p{
 	font-size: 1.7rem;
 	padding: 2rem 0;
 	line-height: 2rem;
+	text-align: justify;
 }
 
 aside{
@@ -125,7 +128,7 @@ main img aside img{
 
 @media screen and (max-width:767.99px){
 	.col-sm-1 {width: 8.333333%;}
-
+	
     .col-sm-2 {width: 16.666666%;}
 
     .col-sm-3 {width: 25%;}
@@ -147,5 +150,181 @@ main img aside img{
     .col-sm-11 {width: 91.666666%;}
 
     .col-sm-12 {width: 100%;}
+}
+
+
+@media screen and (min-width:768px){
+	.col-md-1 {width: 8.333333%;}
+
+    .col-md-2 {width: 16.666666%;}
+
+    .col-md-3 {width: 25%;}
+
+    .col-md-4 {width: 33.333333%;}
+
+    .col-md-1 {width: 41.666666%;}
+
+    .col-md-6 {width: 50%;}
+
+    .col-md-7 {width: 58.333333%;}
+
+    .col-md-8 {width: 66.666666%;}
+
+    .col-md-9 {width: 75%;}
+
+    .col-md-10 {width: 83.333333%;}
+
+    .col-md-11 {width: 91.666666%;}
+
+    .col-md-12 {width: 100%;}
+
+	.container{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	header{ 
+		justify-content: center;
+	}
+
+	nav a{ 
+		margin: 0;
+	}
+
+	main{
+		border-bottom: var(--gris-claire) solid;
+	}
+
+	section{
+		justify-content: center;
+	}
+
+	section h2{
+		padding: 2.5rem;
+	}
+
+	section p{
+		text-align: left;
+	}
+
+	
+
+	main section p{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	aside{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 3rem;
+		justify-content: space-between;
+	}
+
+	aside h3{
+		font-size: 1.7rem;
+		color: var(--chocolat);
+		font-weight: bold;
+		padding: 0 0 1rem 1rem;
+		border-bottom: 1px var(--gris-claire) solid;
+	}
+
+	aside ol{
+		font-size: 1.5rem;
+		padding: 2rem;
+	}
+
+	
+
+	
+
+	aside div:nth-child(2) div{
+		padding-top: 1.5rem;
+	}
+
+}
+
+@media screen and (min-width:1200px){
+	.col-xl-1 {width: 8.333333%;}
+	
+    .col-xl-2 {width: 16.666666%;}
+
+    .col-xl-3 {width: 25%;}
+
+    .col-xl-4 {width: 33.333333%;}
+
+    .col-xl-1 {width: 41.666666%;}
+
+    .col-xl-6 {width: 50%;}
+
+    .col-xl-7 {width: 58.333333%;}
+
+    .col-xl-8 {width: 66.666666%;}
+
+    .col-xl-9 {width: 75%;}
+
+    .col-xl-10 {width: 83.333333%;}
+
+    .col-xl-11 {width: 91.666666%;}
+
+    .col-xl-12 {width: 100%;}
+
+	main{
+		border-top: 1px solid var(--gris-claire);
+	}
+
+	.container{
+		width: 70%;
+		margin: 0 auto;
+	}
+	nav{
+		justify-content: center;
+	}
+
+	nav a{
+		background-color: transparent;
+	}
+
+	header div{
+		flex-direction: row;
+	}
+	
+
+	h1{
+		padding: 0;
+	}
+
+	main{
+		border-top: 1px solid var(--gris-claire);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-between;
+	}
+
+	
+
+	section + hr{ /* C'est un sélécteur adjacent. il permet de ne selectionner que l'élément qui est immédiatement précédé par le premier élément cible*/
+		display: none;
+	}
+
+	aside{
+		display: flex;
+		flex-direction: column;
+		/* height: 700px;
+		justify-content: space-around; */
+		
+	}
+
+	aside div{
+		margin-bottom: 10rem;
+	}
+
+	aside
+
+	
+
+	
+
 }
 
