@@ -1,5 +1,5 @@
 :root{
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
 }
 
 
@@ -15,4 +15,16 @@ h1{
 img{
     width: 100%;
 }
+
+*{
+    box-sizing: border-box !important;
+}
+
+table[class*=col-lg-6]{/*est un sélécteur CSS qui cible tous les éléments qui ont une classe contenant le texte "col"*/
+    width: 50%;
+}
+
+
+
+
 
