@@ -43,13 +43,114 @@
         // Rappel : en informatique, la virgule s'écrit avec un point.
         // INDICE : // [°F] = [°C] x 9/5 + 32.
 
-        let C = prompt("temperature en c°")
-        let F = C* (9/5) +32;
-        alert(F)
+        // let C = prompt("temperature en c°")
+        // let F = C* (9/5) +32;
+        // alert(F)
+
+
+        //-----------------------EXERCICE----------------------------//
+
+        // let a = 10;
+        // let b = 5;
+        // let c = 2;
+
+        // a>b a est bien supérieur à b
+        //sinon a inferieur à b
+
+        // if(a > b){ //true
+        //     document.write("a est bien supperieur a b")
+        // }
+        // else{
+        //     document.write("a est inferieur a b")
+        // }
+
+        
+        //a>b et b>c afficher ok u deux conditions
+        //sinon une de ces deux conditions est fausse
+
+        // if(a>b && b>c){//true
+        //     document.write("OK pour les deux conditions")
+        // }else{
+        //     document.write("unede ces deux conditions sont fausse")
+        // }
+        
+        
+        //a = 9 ou b<9 ok pour au moins une de ces deux conditions 
+        //sinon les deux conditions sont fausses
+        
+        // if(a=9 || b<9){
+        //     document.write("ok")
+        // }
+        // else{
+        //     document.write("les deux sont fausses")
+        // }
+        
+
+        // J'arrive sur un Espace sécurisé au moyen du prénom et de l'âge.
+        // Je dois saisir mon prénom et mon age pour être authentifié sur le site (ces informations seront au préalable stocké dans des variables prenom et age).
+        //  En cas d'echec, une alerte m'informe du problème.
+        //  Si tout se passe bien, un message de bienvenue m'accueille.
+
+
+        // let ageSemir = 40
+        // let prenomSemir = "Semir" 
+        // let age = parseInt(prompt("veuillez saisir votre age"))
+        // let prenom = prompt("veuillez saisir votre prenom").toLowerCase();
+
+        // console.log(typeof prenom)
+
+        // if(prenom == prenomSemir && age == ageSemir){
+        //     alert("bienvenue")//j'affiche un message de bienvenue
+        // }else{
+        //     alert("verifiez vos informations")//sinon j'affiche un message d'errur
+        // }
+
+
+        //-----------------exercice boucle avec tabeau----------
 
 
 
+        // Exercice 5 
+        /* 
+            Déclarer trois tableaux :
+                tab1 qui contient 5 noms
+                tab2 qui contient 5 prenoms
+                tab3 qui contient 5 âges
+            Afficher en utilisant une boucle les noms et prénoms associés dans un document write
+        
+        */
+       let tab1 = ["Semir","Paul","Marc","Spartak","Axel"]
+       let tab2 = [" Sarajlic "," Pierrard "," LaMachine "," Smbatyan "," LaMachine2 "]
+       let tab3 = [100,15,25,26,30]
 
+       for (s=0;s<=4;s++) {
+
+        document.write(tab1[s], tab2[s], tab3[s]+'<br>')
+        
+        
+       }
+
+
+
+        // Exercice 6
+
+        /*
+            Ecriver un programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour dans la console :
+            En utilisant le boucle for
+
+
+            Le manège démarre
+            C'est le tour numéro 1
+            C'est le tour numéro 2
+            ...
+            C'est le tour numéro 10
+            Le manège s'arrête
+        */
+
+        // for (let  = 0;  < array.length; ++) {
+        //     const element = array[];
+            
+        // }
 
 
     </script>
