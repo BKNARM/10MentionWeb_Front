@@ -119,25 +119,25 @@
             Afficher en utilisant une boucle les noms et prénoms associés dans un document write
         
         */
-       let tab1 = ["Semir "," Paul"," Marc","Spartak","Axel"]
-       let tab2 = [" Sarajlic "," Pierrard "," LaMachine "," Smbatyan "," LaMachine2 "]
-       let tab3 = [100,15,25,26,30]
+    //    let tab1 = ["Semir "," Paul"," Marc","Spartak","Axel"]
+    //    let tab2 = [" Sarajlic "," Pierrard "," LaMachine "," Smbatyan "," LaMachine2 "]
+    //    let tab3 = [100,15,25,26,30]
 
-    //    for (t=0;t<tab1.length;t++) {
+    // //    for (t=0;t<tab1.length;t++) {
 
-    //     document.write(`${tab1[t]} ${tab2[t]} ${tab3[t]}<br>`)
+    // //     document.write(`${tab1[t]} ${tab2[t]} ${tab3[t]}<br>`)
         
+        
+    // //    }
+
+    //    let tab4 = [tab1, tab2, tab3];
+
+    //    for (let k = 0; k < tab4[0].length; k++) {
+        
+    //     document.write(`${tab4[0][k]} ${tab4[1][k]} ${tab4[2][k]} <br>`)
+
         
     //    }
-
-       let tab4 = [tab1, tab2, tab3];
-
-       for (let k = 0; k < tab4[0].length; k++) {
-        
-        document.write(`${tab4[0][k]} ${tab4[1][k]} ${tab4[2][k]} <br>`)
-
-        
-       }
         
     
 
@@ -196,22 +196,22 @@
                     =>afficher  "Vous n\avez pas saisi de nombre !"   
         */
 
-    let bac = prompt("entrez votre note")
+    // let bac = prompt("entrez votre note")
 
-    if(!isNaN(bac)){
+    // if(!isNaN(bac)){
 
-        if (bac >=0 &&  bac < 10) {
-        document.write("rentre chez toi!")
-    } else if(bac >=10 && bac <=11) {
-        document.write("Tu passes, sans mention !")
+    //     if (bac >=0 &&  bac < 10) {
+    //     document.write("rentre chez toi!")
+    // } else if(bac >=10 && bac <=11) {
+    //     document.write("Tu passes, sans mention !")
         
-    }else if(bac>=12 && bac<=20){
-        document.write("Reçu avec mention ! :)")
+    // }else if(bac>=12 && bac<=20){
+    //     document.write("Reçu avec mention ! :)")
 
-    }else if(bac >0 || bac >20){
-        document.write("Vous n'avez pas saisi de nombre !")
-    };
-    }
+    // }else if(bac >0 || bac >20){
+    //     document.write("Vous n'avez pas saisi de nombre !")
+    // };
+    // }
 
     //---------------CORRECTION--exercice 7----------------------
 
@@ -258,22 +258,22 @@
 
 
 
-                let reponse = "";
+            //     let reponse = "";
 
-                // Boucle while qui continue tant que l'utilisateur ne saisit ni "oui" ni "non"
-                while (reponse.toLowerCase() !== "oui" && reponse.toLowerCase() !== "non") {
-                // Demande à l'utilisateur de saisir une réponse
-                reponse = prompt("Veuillez saisir une réponse (ni oui, ni non) :");
+            //     // Boucle while qui continue tant que l'utilisateur ne saisit ni "oui" ni "non"
+            //     while (reponse.toLowerCase() !== "oui" && reponse.toLowerCase() !== "non") {
+            //     // Demande à l'utilisateur de saisir une réponse
+            //     reponse = prompt("Veuillez saisir une réponse (ni oui, ni non) :");
 
-                // Vérifie si l'utilisateur a saisi "oui" ou "non"
-                if (reponse.toLowerCase() === "oui" || reponse.toLowerCase() === "non") {
-                // Si oui, affiche un message de fin du jeu
-                alert("Fin du jeu !");
-                 }
-                }
+            //     // Vérifie si l'utilisateur a saisi "oui" ou "non"
+            //     if (reponse.toLowerCase() === "oui" || reponse.toLowerCase() === "non") {
+            //     // Si oui, affiche un message de fin du jeu
+            //     alert("Fin du jeu !");
+            //      }
+            //     }
 
-            // Affiche la réponse finale de l'utilisateur
-            alert("Vous avez répondu : " + reponse);
+            // // Affiche la réponse finale de l'utilisateur
+            // alert("Vous avez répondu : " + reponse);
 
 
 
@@ -304,12 +304,7 @@
     
 
     </script>
-    <> ShareMyCode.io
-    Ajouter un code
-    Connexion
-    Inscription
-    Voici votre URL de partage https://sharemycode.io/c/f843667 (Cliquer pour copier)
-    Nom du fichier : index.html
+    
     
     <!DOCTYPE html>
     <html lang="fr">
@@ -361,8 +356,8 @@
             //  En cas d'echec, une alerte m'informe du problème.
             //  Si tout se passe bien, un message de bienvenue m'accueille.
     
-            let ageSemir = 40;
-            let prenomSemir = "semir"
+            // let ageSemir = 40;
+            // let prenomSemir = "semir"
     
             // let age = prompt('Veuillez saisir votre age');
             // age = parseInt(age);
@@ -455,18 +450,18 @@
             //     }
             // }
     
-            for ( let i = 0; i <= 11; i++ ) {
+            // for ( let i = 0; i <= 11; i++ ) {
     
-                if (i == 11) {
-                    document.write(`C'est fini, le tour de manège est <strong>terminé</strong> <br>`);         
-                }
-                else if (i == 0) {
-                    document.write(`Le manège <strong>démarre</strong> <br>`);
-                }
-                else {
-                    document.write(`C'est le tour de manège numéro <strong>${i}</strong> <br>`); 
-                }        
-            }
+            //     if (i == 11) {
+            //         document.write(`C'est fini, le tour de manège est <strong>terminé</strong> <br>`);         
+            //     }
+            //     else if (i == 0) {
+            //         document.write(`Le manège <strong>démarre</strong> <br>`);
+            //     }
+            //     else {
+            //         document.write(`C'est le tour de manège numéro <strong>${i}</strong> <br>`); 
+            //     }        
+            // }
             
     
             // Exercice 7
@@ -484,62 +479,62 @@
             */
     
     
-            let moyenne = prompt('Votre moyenne');
+        //     let moyenne = prompt('Votre moyenne');
     
-            if (!isNaN(moyenne)) { // si un nombre 
+        //     if (!isNaN(moyenne)) { // si un nombre 
     
-                if (moyenne >= 0 && moyenne < 10) {
+        //         if (moyenne >= 0 && moyenne < 10) {
     
-                document.write("tu es recalé");
+        //         document.write("tu es recalé");
     
-                } else if(moyenne >= 10 && moyenne <= 11) {
+        //         } else if(moyenne >= 10 && moyenne <= 11) {
     
-                document.write("Tu passes, sans mention !");
+        //         document.write("Tu passes, sans mention !");
     
     
-                }else if (moyenne >= 12 && moyenne <= 20) {
+        //         }else if (moyenne >= 12 && moyenne <= 20) {
     
-                document.write("Reçu avec mention ! :)!");
+        //         document.write("Reçu avec mention ! :)!");
     
-                }else if (moyenne < 0 || moyenne > 20) {
+        //         }else if (moyenne < 0 || moyenne > 20) {
     
-                document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
+        //         document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
     
-                }
-            }else {
+        //         }
+        //     }else {
     
-                document.write( "Vous n\avez pas saisi de nombre !");
+        //         document.write( "Vous n\avez pas saisi de nombre !");
     
-            }
+        //     }
           
     
-            if (isNaN(moyenne)) { // si un nombre 
+        //     if (isNaN(moyenne)) { // si un nombre 
     
-                document.write( "Vous n\avez pas saisi de nombre !");
+        //         document.write( "Vous n\avez pas saisi de nombre !");
     
                  
-            }else {
+        //     }else {
     
-                    if (moyenne >= 0 && moyenne < 10) {
+        //             if (moyenne >= 0 && moyenne < 10) {
     
-                document.write("tu es recalé");
+        //         document.write("tu es recalé");
     
-                } else if(moyenne >= 10 && moyenne <= 11) {
+        //         } else if(moyenne >= 10 && moyenne <= 11) {
     
-                document.write("Tu passes, sans mention !");
+        //         document.write("Tu passes, sans mention !");
     
     
-                }else if (moyenne >= 12 && moyenne <= 20) {
+        //         }else if (moyenne >= 12 && moyenne <= 20) {
     
-                document.write("Reçu avec mention ! :)!");
+        //         document.write("Reçu avec mention ! :)!");
     
-                }else if (moyenne < 0 || moyenne > 20) {
+        //         }else if (moyenne < 0 || moyenne > 20) {
     
-                document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
+        //         document.write("La moyenne doit être comprise entre 0 et 20 ! :)");
     
-            }
+        //     }
     
-        }
+        // }
     
             
     
@@ -563,17 +558,17 @@
             */
     
     
-            let nbr = prompt('Entrez un nombre');
+            // let nbr = prompt('Entrez un nombre');
     
-            if (isNaN(nbr)) {
+            // if (isNaN(nbr)) {
     
                 
-                document.write("Vous n'avez pas saisi de nombre !");
-            }else {
-                if (nbr) {
-                    document.write('c\'est un nombre');
-                }
-            }
+            //     document.write("Vous n'avez pas saisi de nombre !");
+            // }else {
+            //     if (nbr) {
+            //         document.write('c\'est un nombre');
+            //     }
+            // }
     
             //Exercice 9
     
@@ -588,28 +583,29 @@
                 il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
             */
     
-    
+           //----------------------------------exercice HEURE-----------------------------
+           
+           //si l'heure est entre 6 et 12: Bonjour!
+           //si c'est entre 12 et 18: Bonne après midi!
+           //sinon: Bonsoir
+
+           let heure = prompt('entrez l\'heure');
+
+           if (heure >=6 && heure <12) {
+                alert('Bonjour!');
+            
+           } else if(heure <=12 && heure <18  ){
+                alert('Bonne après midi!')
+           }else{
+                alert('bonsoir')
+           }
     
     
         </script>
         
     </body>
     </html>
-    HTML
-    Informations
-    Cet extrait a été créé le 22 mars 2024 à 16:50:57
     
-    Cet extrait expire le 21 avr. 2024 à 16:50:57
-    
-    Langage : html
-    
-    Logo html
-    
-    Link
-    Voici votre URL de partage : https://sharemycode.io/c/f843667
-    Ce code a été partagé avec Share on ShareMyCode.io pour VSCode
-    
-    Service par Nouvelle-Techno.fr - Mentions légales - Vie privée
     
 </body>
 </html>
