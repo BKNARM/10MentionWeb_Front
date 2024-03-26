@@ -141,11 +141,11 @@
             function hello(){
             let firstName = prompt("Quel est votre prenom ? ");
 
-            if (isNaN(firstName) &&  firstName != null && firstName != " ") {
+            if (isNaN(firstName) ) {
 
                 let birth = prompt(`Bonjour ${firstName} , quel âge as-tu ? `);
 
-                if (birth != null && !isNaN(parseInt(birth)) && birth != " ") {
+                if (!isNaN(parseInt(birth))) {
 
                     let date = new Date(); // Date() permet de créer une instance qui représente un moment précis dans le temps.
                

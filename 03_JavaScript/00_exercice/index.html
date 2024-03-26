@@ -122,16 +122,16 @@
 
 
 
-    //    let tab1 = ["Semir "," Paul"," Marc","Spartak","Axel"]
-    //    let tab2 = [" Sarajlic "," Pierrard "," LaMachine "," Smbatyan "," LaMachine2 "]
-    //    let tab3 = [100,15,25,26,30]
+        //    let tab1 = ["Semir "," Paul"," Marc","Spartak","Axel"]
+        //    let tab2 = [" Sarajlic "," Pierrard "," LaMachine "," Smbatyan "," LaMachine2 "]
+        //    let tab3 = [100,15,25,26,30]
 
-    //    for (t=0;t<tab1.length;t++) {
+        //    for (t=0;t<tab1.length;t++) {
 
-    //     document.write(`${tab1[t]} ${tab2[t]} ${tab3[t]}<br>`)
+        //     document.write(`${tab1[t]} ${tab2[t]} ${tab3[t]}<br>`)
         
         
-    //    }
+        //    }
 
 
 
@@ -139,14 +139,14 @@
 
 
 
-    //    let tab4 = [tab1, tab2, tab3];
+        //    let tab4 = [tab1, tab2, tab3];
 
-    //    for (let k = 0; k < tab4[0].length; k++) {
+        //    for (let k = 0; k < tab4[0].length; k++) {
         
-    //     document.write(`${tab4[0][k]} ${tab4[1][k]} ${tab4[2][k]} <br>`)
+        //     document.write(`${tab4[0][k]} ${tab4[1][k]} ${tab4[2][k]} <br>`)
 
         
-    //    }
+        //    }
         
     
 
@@ -267,36 +267,33 @@
 
 
 
-                let reponse = "";
+                // let reponse = "";
 
                 // Boucle while qui continue tant que l'utilisateur ne saisit ni "oui" ni "non"
-                while (reponse.toLowerCase() !== "oui" && reponse.toLowerCase() !== "non") {
+                // while (reponse.toLowerCase() !== "oui" && reponse.toLowerCase() !== "non") {
                 // Demande à l'utilisateur de saisir une réponse
-                reponse = prompt("Veuillez saisir une réponse (ni oui, ni non) :");
-
-                // Vérifie si l'utilisateur a saisi "oui" ou "non"
-                if (reponse.toLowerCase() === "oui" || reponse.toLowerCase() === "non") {
-                // Si oui, affiche un message de fin du jeu
-                alert("Fin du jeu !");
-                 }
-                }
+                    // reponse = prompt("Veuillez saisir une réponse (ni oui, ni non) :");
+            
+                // Si oui, affiche un message de fin du jeu 
+                 
+                // }
 
             // Affiche la réponse finale de l'utilisateur
-            alert("Vous avez répondu : " + reponse);
+            // alert("Vous avez répondu : " + reponse);
 
 
-            //----------------correction de sahar------------
+            // //----------------correction de sahar------------
 
-            let reponse1 = ""
-            let i = 1
+            // let reponse1 = ""
+            // let i = 1
 
-            while (reponse.toLowerCase() !== "oui" && reponse.toLowerCase() !== "non") {
-                reponse = prompt("alors on joue a ni oui ni non?!");
-                document.write("la" + i + "fois vous avez inséré" +reponse + "<br>");
-                i++
-            }
+            // while (reponse.toLowerCase() !== "oui" && reponse.toLowerCase() !== "non") {
+            //     reponse = prompt("alors on joue a ni oui ni non?!");
+            //     document.write("la" + i + "fois vous avez inséré" +reponse + "<br>");
+            //     i++
+            // }
 
-            document.write("Désole vous avez perdu");
+            // document.write("Désole vous avez perdu");
 
 
 
@@ -310,36 +307,20 @@
             il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
         */
 
-        for (let i = 1; i <= 20; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            document.write("Gralabu"+"<br>");
-        } else if (i % 3 === 0) {
-            document.write("Grala"+"<br>");
-        } else if (i % 5 === 0) {
-            document.write("Bu"+"<br>");
-        } else {
-            document.write(i+"<br>");
-        }
-        }   
+        // for (let i = 1; i <= 20; i++) {
+        //     if (i % 3 === 0 && i % 5 === 0) {
+        //         document.write("Gralabu"+"<br>");
+        //     } else if (i % 3 === 0) {
+        //         document.write("Grala"+"<br>");
+        //     } else if (i % 5 === 0) {
+        //         document.write("Bu"+"<br>");
+        //     } else {
+        //         document.write(i+"<br>");
+        //     }
+        // }   
         
     //////////--------------------------------SAHAR CORRECTION--------------  
-    
-    
-
-    </script>
-    
-    
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exercices</title>
-    </head>
-    <body>
-    
-        <script>
-            // Exercice 1 
+    // Exercice 1 
             // écrire le code invitant l'utilisateur à saisir d'abord son nom et ensuite son prénom dans 2 boîtes de dialogue successives
             // afficher ensuite dans une autre boîte de dialogue le nom et le prénom de l'utilisateur
             // Attention à bien respecter les espaces entre les mots dans le message final.
@@ -581,30 +562,30 @@
             */
     
     
-            let nbr = prompt('Entrez un nombre');
+            // let nbr = prompt('Entrez un nombre');
 
-            console.log(Math.sign(nbr))
+            // console.log(Math.sign(nbr))
     
-            if (isNaN(nbr)) {
+            // if (isNaN(nbr)) {
     
                 
-                document.write("Vous n'avez pas saisi de nombre !");
-            }else {
-               if (Math.sign(nbr) == -1 || Math.sign(nbr) == 0) {
-                   document.write("Vous n'avez pas saisi de nombre !");
-               }else{
+            //     document.write("Vous n'avez pas saisi de nombre !");
+            // }else {
+            //    if (Math.sign(nbr) == -1 || Math.sign(nbr) == 0) {
+            //        document.write("Vous n'avez pas saisi de nombre !");
+            //    }else{
 
-                    while(nbr<= 10){
-                        if(nbr % 2 == 0){
-                            document.write(`Le nombre ${nbr} est pair. <br>`);
-                        }else{
-                            document.write(`Le nombre ${nbr} est impair. <br>`);
-                        }
-                        ++nbr
-                    }
-               }
+            //         while(nbr<= 10){
+            //             if(nbr % 2 == 0){
+            //                 document.write(`Le nombre ${nbr} est pair. <br>`);
+            //             }else{
+            //                 document.write(`Le nombre ${nbr} est impair. <br>`);
+            //             }
+            //             ++nbr
+            //         }
+            //    }
                 
-            }
+            // }
     
             //Exercice 9
     
@@ -618,14 +599,124 @@
                 Il affiche "Bu" à la place du nombre si celui-ci est divisible par 5 et non par 3.
                 il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
             */
-    
-    
-    
-    
-        </script>
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //Exercice 11
+        /*
+            Créez un array vide = []
+            Puis créez une fonction qui prendra 2 paramètres: 2 nombres
+            Le seul but de la fonction sera de pousser le premier nombre à la suite de l'array
+            x fois, par rapport au 2eme nombre
+            Exemple: pousser(8, 5) => [8, 8, 8, 8, 8]
+        */
+
+        let tableau11 = []
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Exercice 12
+
+        /*
+            Créez un array avec plusieurs nombres à l'intérieur
+
+            Créez une fonction qui permet de calculer la somme des nombres, de manière automatique
+        */
         
-    </body>
-    </html>
+        let plusieursNombres = [1, 2, 3, 4, 5]
+
+        function somme() {
+            let total = 0
+            for (let index = 0; index < plusieursNombres.length; index++) {
+                
+                
+            }
+            console.log( plusieursNombres)
+        }
+
+        somme();
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        //Exercice 13
+        /*
+            A l'aide de ce tableau et d'une boucle:
+        */
+
+        const clients = [
+            {//0
+                firstname: "Claire",//0
+                age: 28,//1
+            },
+            {//1
+                firstname: "Max",//0
+                age: 32,//1
+            },
+            {//2
+                firstname: "Léo",//0
+                age: 23,//1
+            },
+        ];
+
+
+        let totalAge = 0
+        for (let index = 0; index < clients.length; index++) {
+            
+            
+        }
+        document.write(totalAge);
+
+        
+
+        // Calculez et affichez dans le terminal la somme des âges.
+          
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Exercice 14
+
+        /* Créer une fonction qui doit déterminer si un utilisateur à insérer correctement un @ dans son adresse email.
+            Puis afficher le résultat: true ou false
+            ex: testEmail('julien@gmail.com') => true
+            ex: testEmail('julien.gmail.com') => false
+        */
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////
     
+
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    </script>
 </body>
 </html>
