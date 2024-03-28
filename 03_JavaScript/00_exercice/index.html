@@ -612,7 +612,38 @@
             Exemple: pousser(8, 5) => [8, 8, 8, 8, 8]
         */
 
-        let tableau11 = []
+        // let tableau11 = [];
+
+        // function tableau(nb1, nb2){
+        //     for (let i = 0; i < nb2; i++) {
+
+        //         tableau11.push(nb1);
+
+        //     }
+        //     document.write("tableau11 = [" + tableau11 + "] <br>");
+        //     tableau11 = [];
+        // }
+
+        // tableau(5,3);
+        // tableau(6,8);
+
+        //2ème façcon
+
+        // let maFonction = (nbr1, nbr2)=>{
+
+        //     let table = [];
+        //     for (let i = 0; i < nbr2; i++) {
+
+        //         table.push(nbr1);
+
+        //     }
+        //     document.write("tableau11 = [" + table + "] <br>");
+            
+        // }
+
+        // maFonction(10,20);
+        // maFonction(9,7);
+
 
 
 
@@ -631,19 +662,49 @@
 
             Créez une fonction qui permet de calculer la somme des nombres, de manière automatique
         */
-        
-        let plusieursNombres = [1, 2, 3, 4, 5]
 
-        function somme() {
-            let total = 0
-            for (let index = 0; index < plusieursNombres.length; index++) {
-                
-                
-            }
-            console.log( plusieursNombres)
-        }
+        // let tab = [50, 7, 20, 60, 10]
 
-        somme();
+        // let sommeTab = ()=>{
+        //     let somme = 0;
+        //     for (let i = 0; i < tab.length; i++) {
+                
+        //         somme+= tab[i];
+                
+        //     }
+        //     document.write(somme + "<br>")
+        // }
+        // sommeTab();
+
+
+
+
+
+
+
+
+
+
+
+
+        //deuxieme façon de faire
+        // let array = function(nombre){
+
+        //     let k = 0;
+        //     for (let i = 0; i < nombre.length; i++) {
+                
+        //         k+= nombre[i];// somme = somme + nombre[i]
+
+        //         //somme = 0 + 5 = 5
+        //         //somme = 5 + 40 = 45
+        //         //somme = 45 + 15 = 60
+        //         //somme = 60 + 60 = 120
+        //     }
+
+        //     return k;// la fonction retourne une valeur : la somme des éléments dans le tableau
+        // }
+
+        // document.write(array([5, 40, 15, 60]))
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -658,7 +719,7 @@
             A l'aide de ce tableau et d'une boucle:
         */
 
-        const clients = [
+        let clients = [
             {//0
                 firstname: "Claire",//0
                 age: 28,//1
@@ -674,12 +735,43 @@
         ];
 
 
-        let totalAge = 0
-        for (let index = 0; index < clients.length; index++) {
+
+
+
+        // let totalAge = 0
+        // for (let client of clients) {
+
+        //     totalAge += client.age //totaleAge = totalAge + client.age
             
             
+        // }
+        // document.write(`la somme des ages ${totalAge}`);
+
+
+        //2eme façon de faire : boucle for
+
+        let totalAge = 0;
+
+        // for (let i = 0; i < clients.length; i++) {
+            
+        //    totalAge += clients[i].age
+
+        // }
+        // document.write(totalAge)
+
+        //3ème façon de faire
+
+        let index = 0;
+
+        while (index < clients.length) {
+            
+            totalAge += clients[index].age;
+
+            index++;
         }
         document.write(totalAge);
+
+
 
         
 
@@ -698,10 +790,52 @@
             ex: testEmail('julien@gmail.com') => true
             ex: testEmail('julien.gmail.com') => false
         */
+
+        let email = prompt ('Entrez votre adresse email!')//
+
+        // function verifEmail(){
+
+        //     let i = 0
+        //     let j;
+            
+        //     while(i < email.length){
+
+            
+
+        //         if (email[i] == "@ "){
+
+        //             j = email[i]
+        //         }
+
+        //         i++;
+        //     }
+        //     if(j == "@"){
+
+        //         document.write("true");
+
+        //     }else{
+        //         document.write("false")
+        //     }
+
+
+
+        // }
+
+        // verifEmail(email)
+
+        // avec la fonction indexOf()
+
+        function verif(email){
+
+            let index = email.indexOf()
+
+
+        }
+
         ////////////////////////////////////////////////////////////////////////////////////////////////////////
     
 
-    
+        
     
     
     

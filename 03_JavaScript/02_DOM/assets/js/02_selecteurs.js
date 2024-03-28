@@ -82,6 +82,127 @@ for(let p of lesP ){
 }
 
 
+// titre.style.backgroundColor="pink";
+
+
+let pink = document.getElementsByClassName('pink');
+// pink.style.backgroundColor='pink'
+pink[0].style.backgroundColor='pink'
+console.log(pink);
+
+
+//Selection via queryselector (selectionner le premier élément trouvé)
+
+
+// La méthode querySelector() retourne le 1er élément trouvé spécifié en paramètres.
+// L'avantage de querySelector c'est qu'il utilise la syntaxe de sélection CSS -> #monId .maClass <balise>.
+
+let div =document.querySelector('div');
+
+div.style.border='10px solid #000'
+
+
+//Selectionne via queryselectorAll() (selectionne tous les éléments trouvés)
+
+// sélectionne toutes les balises en ensemble et retourne un array d'élements*
+
+let query = document.querySelectorAll('.selectClass');
+
+console.log(query);//on a 3 paragrape qui ont la classe selectClass
+
+for (let i = 0; i < query.length; i++) {
+    
+    console.log(query[i].innerText);
+}
+
+//La propriété innerText est similaire à innerHTML, mais elle fonctionne avec le texte brut à l'intérieur d'un élément, plutôt qu'avec le HTML. Elle permet d'accéder au texte contenu dans un élément HTML et de le modifier si nécessaire.
+
+let rajout = document.querySelector(" .bg-success p")
+
+rajout.innerHTML = "<strong>je suis la </strong>"
+
+//CREATION D'UN NOUVEL ELEMENT
+
+let section = document.querySelector('section');
+//Pour créer un élément, nous utilisions la méthode creatElement (), puis nous l'integrons dans le noeud souhaité
+
+let nouveauParaFin = document.createElement('p');
+
+nouveauParaFin.innerHTML = "<strong>coucou, je suis ton nouveau paragraphe à la fin de la section </strong>";
+nouveauParaFin.style.color = "red";
+
+section.append(nouveauParaFin);//append() -> insére du contenu à la fin de la section. //append() accepte tous les éléments (balise ou string).
+
+let nouveauParaDebut = document.createElement('p');
+nouveauParaDebut.innerHTML = "<strong>coucou, je suis ton nouveau paragraphe à la fin de la section </strong>";
+
+nouveauParaDebut.style.color = "green";
+
+section .prepend(nouveauParaDebut);//prepend()-> insere du contenue de la section
+
+//---------------------------------------------------------------
+//DEPLACER UN ELEMENT
+
+// pour deplacer un element , il faut 3 parametres
+    /*
+        * -> le parent
+        * -> l'element a de placer 
+        * -> l'element qui vient apres 
+    */
+
+let parent = document.querySelector('main');
+let jeBouge = document.querySelector('h4');
+let h2 = document.querySelector('.subtitle');
+
+parent.insertBefore(jeBouge, h2);
+
+
+//SUPPRIMER UN ELEMENT
+
+//pour supprimer un element ilfzut deux parametres : 
+
+/*
+     * -> le parent
+     * -> l'element a supprimer       
+*/
+
+let ul = document.querySelector('ul');
+
+let li = document.querySelector('ul :nth-child(2');
+
+console.log(li);
+
+
+//Pour supprimer , on utilise .removeChild()
+ul.removeChild(li);
+
+//CREER UN ATTRIBUT ET SA VALEUR
+
+// setAttribute( ) : méthode pour ajouter un nouveau attribut ou changer la valeur d'un attribut existant pour un élément
+
+let baliseA = document.querySelector('a');
+
+baliseA.setAttribute("attribut", "valeurAttribut");//je rajoute un attribut à la balise a
+
+baliseA.setAttribute("href", "01_introduction.html");//changer la valeur de l'attribut href
+
+let lesA = document.querySelectorAll('a')
+
+let valeurA = lesA[3].getAttribute('href');//ici je récupère la valeur de l'attribut href avec legetAttribute()
+console.log(valeurA);
+
+
+
+
+
+// Grâce à votre script, créez une balise a dans la balise h1 avec le lien vers la documentation JS () qui s'affiche sur un nouvel onglet.
+// Ce lien sera de couleur blanche et non souligné.
+
+let insertionA = document.createElement('a');
+insertionA.innerHTML = "<a>c'est moi le nouveau a</a>"
+
+
+
 
 
 
