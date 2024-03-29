@@ -159,7 +159,7 @@ parent.insertBefore(jeBouge, h2);
 
 //SUPPRIMER UN ELEMENT
 
-//pour supprimer un element ilfzut deux parametres : 
+//pour supprimer un element il faut deux parametres : 
 
 /*
      * -> le parent
@@ -188,7 +188,7 @@ baliseA.setAttribute("href", "01_introduction.html");//changer la valeur de l'at
 
 let lesA = document.querySelectorAll('a')
 
-let valeurA = lesA[3].getAttribute('href');//ici je récupère la valeur de l'attribut href avec legetAttribute()
+let valeurA = lesA[3].getAttribute('href');//ici je récupère la valeur de l'attribut href avec le getAttribute( )
 console.log(valeurA);
 
 
@@ -199,9 +199,46 @@ console.log(valeurA);
 // Ce lien sera de couleur blanche et non souligné.
 
 let insertionA = document.createElement('a');
-insertionA.innerHTML = "<a>c'est moi le nouveau a</a>"
+insertionA.innerHTML = "c'est moi le nouveau contenue du h1";
+let lElementParent = document.getElementById('titre');
+lElementParent.innerHTML="";
+lElementParent.appendChild(insertionA);
+insertionA.setAttribute("href", "https://developer.mozilla.org/fr/docs/Web/JavaScript");
+insertionA.setAttribute("target", "_blank")
+insertionA.style.textDecoration="none";
+insertionA.style.color="white";
+
+///////////////////////correction/////////////////////////////////
 
 
+//correction de Marc
+// let container = document.querySelector('h1');
+// let element = document.createElement('a');
+// element.setAttribute('href', 'https://developer.mozilla.org/fr/docs/Web/JavaScript');
+// element.setAttribute('target', '_blank');
+// element.style.textDecoration="none";
+// element.style.color="white";
+// element.innerText = "document JS"
+// container.innerText = ""
+// container.appendChild(element);
+
+
+//correction Sahar
+
+// container.innerHTML = '<a> Cours Javascript </a>';
+// let element = document.querySelector('h1 a')
+// element.setAttribute("href", "https://developer.mozilla.org/fr/docs/Web/JavaScript");
+// element.setAttribute("target", "_blank");
+// element.style.textDecoration="none";
+// element.style.color="white"
+
+
+//3eme façon de faire et la plus facile
+
+// container.innerHTML = "<a href = 'https://developer.mozilla.org/fr/docs/Web/JavaScript' target='_blank' >Cours JavaScript</a>";
+// let element = document.querySelector('h1 a');
+// element.style.color="white";
+// element.style.textDecoration="none";
 
 
 
