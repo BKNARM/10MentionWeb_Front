@@ -54,12 +54,30 @@ function promijeniboju() {
 }
 
 //========================exo===========================
-let emoji = document.querySelector('.bi-emoji-neutral')
-emoji.addEventListener('click', emojiSwitcher);
+let emoji = document.querySelector('.bi-emoji-neutral');
+// emoji.addEventListener('click', emojiSwitcher);
 
 
 
-function emojiSwitcher(){
+// function emojiSwitcher(){
+
+//     // premiere façon de faire
+//     if (emoji.classList.contains('bi-emoji-neutral')) {
+//         emoji.classList.remove('bi-emoji-neutral');
+//         emoji.classList.add('bi-emoji-heart-eyes');
+//     } else {
+//         emoji.classList.remove('bi-emoji-heart-eyes');
+//         emoji.classList.add('bi-emoji-neutral');
+//     }
+
+
+
+// }
+
+// deuxieme façon de faire (fonction fleché)
+
+emoji.addEventListener('click', ()=>{
+
     if (emoji.classList.contains('bi-emoji-neutral')) {
         emoji.classList.remove('bi-emoji-neutral');
         emoji.classList.add('bi-emoji-heart-eyes');
@@ -67,17 +85,47 @@ function emojiSwitcher(){
         emoji.classList.remove('bi-emoji-heart-eyes');
         emoji.classList.add('bi-emoji-neutral');
     }
-}
+
+    // emoji.classList.toggle('bi-emoji-wink')//toisieme façon
+
+})
 
 
-let abonne = document.querySelector('.btn-abonner')
-abonne.addEventListener('click',abonnement)
+
+
+let abonne = document.querySelector('.btn-abonner');
+abonne.addEventListener('click',()=>{
+
+
+    if (abonne.innerText==='Abonnez-vous') {
+        
+        abonne.innerHTML = 'Abonné <i class="bi bi-check"></i>'
+
+
+    } else {
+        
+        abonne.innerText = 'Abonnez-vous'
 
 
 
-function abonnement() {
-    
-}
+    }
+});
+
+
+//===========cookies=====================//
+
+let btnCookies = document.querySelector('.btn-success');
+let cookies = document.querySelector('.cookies');
+btnCookies.addEventListener('click', ()=>{
+
+    // cookies.style.opacity = "0";
+    cookies.style.bottom = "auto";
+
+
+});
+
+
+
 
 
 

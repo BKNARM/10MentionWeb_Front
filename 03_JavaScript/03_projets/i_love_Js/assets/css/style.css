@@ -15,8 +15,7 @@
 }
 
 body{
-    /* background-color: aqua; */
-}
+    font-size: 1.4rem;}
 
 /* ============================Barre de navigation desktop============================ */
 
@@ -136,12 +135,12 @@ h1{
 
 /* =======================video youtube======================= */
 .bloc-btn{
-    width: 40%;
-    margin: 2rem auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.bloc-btn i{
-    font-size: 4rem;
+.bloc-btn .bi:not(.bi-check){
+    font-size: 3.5rem;
 }
 
 .btn-abonner{
@@ -150,4 +149,70 @@ h1{
     background-color: #1e2337;
     border: none;
     color: #f1bf2a;
+}
+/**************** cookies *****************/
+
+.cookies{
+    opacity: 1;
+    background-color: grey;
+    padding: 3rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+
+}
+
+.cookies button{
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-success{
+    background-color: #1e2337;
+}
+
+.btn-deny{
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************** footer *****************/
+
+
+footer {
+    background-color: #1E2337;
+    margin: 0 !important;
+    
+}
+footer li {
+    padding: 7px;
+}
+
+footer li a{
+    color: #fff;
+    font-size: 1.3rem;
+    
 }
