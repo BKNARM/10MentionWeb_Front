@@ -309,4 +309,18 @@ footer li a{
 
 
 
-/* *****************keydown***************** */
+/* *****************Keyboard***************** */
+
+.mario{
+    position: relative;
+    
+
+}
+
+
+
+#mario{
+    position: absolute;
+    left: 30px;
+    
+}
