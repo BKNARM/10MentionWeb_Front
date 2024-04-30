@@ -1,5 +1,6 @@
-/* Feuille de style */
-*{
+/* Feuille de style perso */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,203 +8,271 @@
     list-style: none;
 }
 
-:root{
+:root {
+
     font-size: 62.5%;
     --font-lobster : "Lobster", sans-serif;
-    --font-shadows-into-light : "Shadows Into Light", cursive;
+    --font-Shadows-Into : "Shadows Into Light", cursive;
     --font-general : Arial, Helvetica, sans-serif;
+
 }
+body {
+    font-size: 1.4rem;
+}
+/*  Barre de navigation desktop */
 
-body{
-    font-size: 1.4rem;}
-
-/* ============================Barre de navigation desktop============================ */
-
-.navbar-desktop{
-    background-color: rgb(218, 202, 202);
+.navbar-desktop {
+    
+    background-color: #fff;
     font-weight: bolder;
     height: 8rem;
-
 
 }
 
 .navbar-desktop a {
-    font-family: var(--font-shadows-into-light);
+    font-family: var(--font-Shadows-Into);
     font-size: 2rem;
     padding: 5rem;
     color: #61b3ff;
+
 }
 
-.switch{
+.switch {
     width: 90px;
     height: 30px;
     background-color: #61b3ff;
     border-radius: 15px;
     border: 1px solid #61b3ff;
-    position: relative; /* l'élement parent en position relative : cela permet de positionner l'icone en absolute*/
-}
+    position: relative; /* l'élément parent en position relative : cela permet de positionner l'incône en absolute*/
 
-.switch i{
-    color: #ffd363;
+}
+.switch i {
+    color: #FFd363;
     font-size: 1.8rem;
-    position: absolute;/* Position absolute par rapport à la div parent .switch*/
+    position: absolute; /* position absolute par rapport à la div parent .switch*/
     right: 20px;
     
 }
 
-.btn{
+.btn {
+
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #000!important;
-    border: 1px solid #d38c30;
+    background-color: #333;
+    border: 1px solid #61b3ff;
     position: absolute;
-    left: -1px;
-    top: -1px;
+    top: -1px ;
+    left: -1px ;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #333 !important;
 }
 
-/* =========================lecorps de la page========================= */
+/* Le corps de la page  */
 
-.container-fluid{
-    background-color: #cbe6ff;
-    
+.container-fluid {
+
+    background-color: #CBE6FF;
+
 }
 
-.banniere-titre{
+.banniere-titre {
     margin-bottom: 1rem;
 }
 
-h1{
+h1 {
+
     font-family: var(--font-lobster);
     padding: 5rem 0 7rem;
 }
 
 
 
-/* ********************style pour le dark mode*************** */
+/* **************  Style pour le dark mode ***************** */
 
-.nav-dark{
-    background-color: #333;
+.nav-dark {
 
+     background-color: #333;
+}
+.container-change {
+
+    background-color: #2C3C54;
 }
 
-
-.container-change{
-    background-color: #2c3c54;
-
-}
-
-.liensDarkMode{
+.lienDarkMode {
     color: #fff !important;
 }
 
-
-.btn-change{
+.btn-change {
     right: -1px;
     left: auto;
 }
 
-.icon-change{
-    left: 8px;
+.icone-change {
+
+    left : 8px
+
 }
 
-.switch-change{
-    background-color: #2c3c54;
+.switch-change {
+
+    background-color: #2C3C54;
 }
-
-.bi-moon-fill{
-    color: #2c3c54;
+.btn-dark{
+    background-color: #fff;
 }
-
-.titre{
-    color: #fff;
-}
-
-.bouttonJour{
-
-   background-color:#fff !important;
-}
-
-.bouttonJour:hover{
+.btn-dark:hover{
     background-color: #fff !important;
 }
 
+.titre{
 
-/* =======================video youtube======================= */
-.bloc-btn{
+    color: #fff;
+}
+
+/* ***************  Video youtube ****************** */
+
+.bloc-btn {
     width: 100%;
     margin: 0 auto;
 }
-
-.bloc-btn .bi:not(.bi-check){
+.bloc-btn .bi:not(.bi-check)  {
     font-size: 3.5rem;
 }
-
-.btn-abonner{
+.btn-abonner {
     padding: 1rem;
     font-size: 1.4rem;
-    background-color: #1e2337;
+    background-color: #1E2337;
     border: none;
     color: #f1bf2a;
 }
-/**************** cookies *****************/
-
-.cookies{
-    opacity: 1;
-    background-color: grey;
-    padding: 3rem;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
 
 
-}
+/* ***************  cookies ****************** */
 
-.cookies button{
-    color: white;
-    padding: 1rem;
-    margin: 1rem;
-    border: none;
-    border-radius: 10px;
-}
+    .cookies {
+        background-color: grey;
+        padding: 3rem;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        opacity: 1;
+        transition: .5s;
 
-.btn-success{
-    background-color: #1e2337;
-}
+    }
 
-.btn-deny{
-    background-color: blue;
-}
+    .cookies button{
+        color: white;
+        padding: 1rem;
+        margin: 1rem;
+        border: none;
+        border-radius: 10px;
 
-/* ***************************player carousel*************************** */
+    }
 
-.outils > div{
-    background-color: #1e2337;
-    color: #fff;
+    .btn-success{
+        background-color: #1E2337;
+    }
+    .btn-deny{
+        background-color: blue;
+    }
+
+
+/**************** carousel *****************/
+
+.outils > div {
+
+    background-color: #1E2337;
+    color:#fff;
     padding: 2rem;
 }
-
-.slider{
+.slider {
     background-image: url(../img/concrete_seamless.png);
     width: 100%;
     padding: 10rem;
-    
+
 }
 
-.slider img{
-    transform: rotate(-5deg);
-    /* border */
+.slider img  {
     margin-top: 5rem;
     border: 20px solid #fff;
     border-radius: 10px;
-    box-shadow: 0px 2px 16px 1px rgba(0, 0, 0, 0.75);
-} 
+    box-shadow: 0px 2px 16px 1px rgba(0,0,0,0.75);
+    transform: rotate(-8deg);
+}
 
-/* **************************************form************************************** */
+/**************** loader *****************/
+
+#loader {
+    height: 100vh;
+    width: 100vw;
+    background-color: #CBE6FF;
+    position: fixed;
+    z-index: 1;
+}
+.icon-loader {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #61b3ff;
+    border-top: 10px solid #1E2337;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
+    animation-name: loader; /*Le nom de la keyframes*/
+    animation-duration: 1s; /*l'animation dure 1 seconde*/
+    animation-iteration-count: infinite; /*elle se répéte à l'infinie*/
+    animation-timing-function: linear;/*La progression de l'animation pendant la durée de chaqe cycle */
+
+
+}
+
+.hideLoader {
+    display: none !important;
+}
+
+@keyframes loader {
+    
+    /* Début de l'animation */
+    /* 0% {
+        transform: rotate(0deg);
+    } */
+    /* Fin de l'animation */
+    /* 100% {
+        transform: rotate(360deg);
+    } */
+
+
+    /* Début de l'animation */
+    from{
+        transform: rotate(0deg);
+    }
+    /* Fin de l'animation */
+    to {
+        transform: rotate(360deg);
+    }
+
+
+
+}
+
+/**************** Keyboard *****************/
+
+.mario {
+    position: relative;
+
+}
+
+#mario {
+    position: absolute;
+    left: 30px;
+    
+
+}
+
+
+/**************** Formulaire *****************/
+
 .container {
     width: 50%;
 }
@@ -226,14 +295,12 @@ form {
     position: relative;
 }
 
-.form-control i:not(.fa-eye-slash, .fa-question, .fa-eye){
+.form-control i:not(.fa-eye-slash, .fa-question, .fa-eye ) {
     position: absolute;
     top: 47px;
     right: 15px;
     visibility: hidden;
-    
 }
-
 .form-control label {
     margin-bottom: 1rem;
     font-size: 1.3rem;
@@ -249,14 +316,14 @@ form {
 
 }
 
-.form-control .fa-question{
+.form-control .fa-question {
     background-color: #CBE6FF;
     font-size: 1rem;
     padding: .2rem;
 }
 
-.mdp p{
-    border: 1px solid #cbe6ff;
+.mdp p {
+    border: 1px solid #CBE6FF;
     width: 120px;
     font-size: .8rem;
     background-color: #CBE6FF;
@@ -267,14 +334,35 @@ form {
     display: none;
 }
 
-.apparition{
-    display: block !important;
+.form-control small {
+
+    visibility: hidden;
 }
 
-.disparition{
-    display: none !important;
+
+.form-control.error small {
+    color: red;
+    visibility: visible;
 }
 
+.form-control.error input {
+    border: 1px solid red;
+}
+
+.form-control.error .fa-exclamation {
+    color: red;
+    visibility: visible;
+}
+
+.form-control.success input {
+    border: 1px solid green;
+}
+
+.form-control.success .fa-circle-check {
+    color:  green;
+    visibility: visible !important;
+
+}
 
 button {
     background-color: #61b3ff;
@@ -286,23 +374,9 @@ button {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.apparition {
+    display: block !important;
+}
 
 
 /**************** footer *****************/
@@ -323,87 +397,3 @@ footer li a{
     
 }
 
-
-
-
-
-
-
-/* ========================Loader======================== */
-
-#loader{
-    height: 100vh;
-    width: 100vw;
-    /* transform: rotate(45deg); */
-    position: fixed;
-    background-color: #cbe6ff;
-    z-index: 1;
-    
-
-   
-    
-}
-
-@keyframes loader{
-    /*le 0% et 100% equivaut au from to*/
-
-    /* 0% { transform: rotate(0deg); }
-  
-  100% { transform: rotate(360deg); } */
-
-    from{/*debut de l'animation*/
-        transform: rotate(0deg);
-    }
-
-    to{/*fin de l'animation*/
-        transform: rotate(360deg); 
-    }
-
-
-
-}
-
-
-
-
-
-
-
-.icon-loader{
-    width: 100px;
-    height: 100px;
-    border: 10px solid #61b3ff;
-    border-top: 10px solid #1e2337;
-    border-radius: 50%;
-    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
-    animation-name: loader; /*nom de la keyframe*/
-    animation-duration: 1s;/*la duré de l'animation*/
-    animation-iteration-count: infinite;/*indique que l'animation est sans fin*/
-    animation-timing-function: linear;/*la progression de l'animation pendant la durée de chaque cycle*/
-    
-
-
-
-}
-
-.hideLoader{
-    display: none !important;
-}
-
-
-
-/* *****************Keyboard***************** */
-
-.mario{
-    position: relative;
-    
-
-}
-
-
-
-#mario{
-    position: absolute;
-    left: 30px;
-    
-}
