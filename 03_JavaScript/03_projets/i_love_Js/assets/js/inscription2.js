@@ -71,6 +71,8 @@ let password2 = document.querySelector('#password2');
 let message = "";
 
 let myAlert = document.querySelector('#alert');
+let inputs = document.querySelectorAll('input')
+
 
 
 
@@ -91,9 +93,22 @@ form.addEventListener('submit', (event) => {
     if (donnee.includes("")) {
 
         myAlert.innerHTML = '<p class="alert alert-danger text-center mt-3" role="alert">Veuillez renseigner tout les champs</p>'
+        for (let input of inputs) {
 
-    } else {
+            setValidation(input, message);
+            
+
+
+        }
+
         
+        
+        
+    }
+    else {
+
+        myAlert.innerHTML = "";
+    
         if (!usernameValue.match(/^[a-zA-Z]+$/)) {
 
 
@@ -162,8 +177,11 @@ form.addEventListener('submit', (event) => {
         }
     }
 
-
-
+    if (myAlert.innerHTML == "" && message == "") {
+        
+        myAlert.innerHTML = '<p class="alert alert-success text-center mt-3" role="alert">Vous etes bien inscrit ! <a href="#">Connectez-vous ici</a></p>'
+    }
+ 
 })
 
 
