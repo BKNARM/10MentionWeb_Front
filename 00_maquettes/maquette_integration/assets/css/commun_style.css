@@ -73,6 +73,7 @@ header nav a:hover {
 
 /************************************ FOOTER ************************************** */
 footer {
+    margin-top: 200px;
     display: flex;
     justify-content: space-around;
     font-size: 1.6rem;
